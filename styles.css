@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: rgb(89, 187, 211);
-    line-height: 80px;
 }
 header{
     display: flex;
@@ -18,6 +20,8 @@ div.one{
     /* pour mettre en an avant */
     z-index: 999;
     padding: 50px;
+    top: 215px;
+    box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, .2);
 }
 div.one h1{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -58,6 +62,15 @@ div.slides{
     }
 }
 /* menu de navigation */
+.two{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-170px);
+}
+nav.menu{
+    width: calc(500px * 4);
+}
 nav.menu ul{
     display:flex;
     
@@ -69,6 +82,11 @@ nav.menu ul li {
     display:flex;
     align-items: center;
     justify-content: center;
+    transition: 0.3s all;
+}
+nav.menu ul li:hover{
+    transform: scale(0.90);
+    transition: 0.3s all;
 }
 nav.menu ul li a {
     color: black;
@@ -80,14 +98,65 @@ nav.menu ul li a {
     height: 300px;
 }
 .pizza{
-    background: url("telechargement.jpeg");
+    background: url("telechargement.jpeg") 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .salade{
-    background: url("images (2).jpeg");
+    background: url("images (2).jpeg") 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .burger{
-    background: url("téléchargement1.jpeg");
+    background: url("téléchargement1.jpeg") 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .boissons{
-    background: url("téléchargement2.jpeg");
+    background: url("téléchargement2.jpeg") 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+/* section des plats */
+.item{
+    background-color: white;
+    margin: 20px;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s all;
+    width: 50%;
+}
+.item:hover{
+    transform: scale(1.1);
+    transition: 0.3s all;
+}
+.item:hover{
+    transition: 0.3s all;
+    box-shadow: -8px 8px 2px 1px rgba(0, 0, 0, .3);
+
+}
+.item-infos{
+    padding:20px ;
+    line-height: 40px;
+}
+section{
+    padding: 80px;
+    font-family: 'Martel', serif;
+
+}
+
+.item-infos h3{
+    font-size: 30px;
+}
+.item-infos hr{
+    margin-top: 10px 0 10px 0;
+    opacity: 0.5;
+}
+section img{
+    width: 330px;
+}
+p.prix{
+    font-weight: bold;
+    font-size: 22px;
+}
+/* menu bloquer */
