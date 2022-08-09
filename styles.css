@@ -124,7 +124,7 @@ nav.menu ul li a {
     display: flex;
     cursor: pointer;
     transition: 0.3s all;
-    width: 50%;
+    width: 60%;
 }
 .item:hover{
     transform: scale(1.1);
