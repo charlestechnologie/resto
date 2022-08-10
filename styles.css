@@ -4,15 +4,17 @@
 }
 html{
     scroll-behavior: smooth;
+    font-size: x-large;
 }
 body{
-    background-color: rgb(89, 187, 211);
+    background-color: rgb(21, 69, 202);
 }
 header{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center ;
+    width: 180%;
 }
 div.one{
     background-color: aliceblue;
@@ -20,7 +22,7 @@ div.one{
     /* pour mettre en an avant */
     z-index: 999;
     padding: 50px;
-    top: 215px;
+    top: 250px;
     box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, .2);
 }
 div.one h1{
@@ -33,7 +35,7 @@ div.slider{
    overflow: hidden;
 }
 div.slides{
-    display: flex;
+    display:inline-flex;
     align-items: center;
     flex-direction: row;
     width: calc(500px *4);
@@ -63,7 +65,7 @@ div.slides{
 }
 /* menu de navigation */
 .two{
-    width: 100%;
+    width: 175%;
     display: flex;
     justify-content: center;
     transform: translateY(-170px);
@@ -88,7 +90,7 @@ nav.menu ul li:hover{
     transform: scale(0.90);
     transition: 0.3s all;
 }
-nav.menu ul li a {
+nav.menu ul li a{
     color: black;
     font-size: 50px;
     text-decoration: none;
@@ -100,22 +102,27 @@ nav.menu ul li a {
 .pizza{
     background: url("telechargement.jpeg") 100%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
+    width: 180%;
+    
 }
 .salade{
     background: url("images (2).jpeg") 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 180%;
 }
 .burger{
     background: url("téléchargement1.jpeg") 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 180%;
 }
 .boissons{
     background: url("téléchargement2.jpeg") 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 180%;
 }
 /* section des plats */
 .item{
@@ -124,7 +131,7 @@ nav.menu ul li a {
     display: flex;
     cursor: pointer;
     transition: 0.3s all;
-    width: 60%;
+    width: 100%;
 }
 .item:hover{
     transform: scale(1.1);
@@ -136,17 +143,20 @@ nav.menu ul li a {
 
 }
 .item-infos{
-    padding:20px ;
-    line-height: 40px;
+    padding:30px ;
+    line-height: 60px;
 }
 section{
     padding: 80px;
     font-family: 'Martel', serif;
+    
 
 }
 
-.item-infos h3{
+.item-infos h3 a {
     font-size: 30px;
+    color: black;
+    text-decoration: none;
 }
 .item-infos hr{
     margin-top: 10px 0 10px 0;
